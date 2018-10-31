@@ -19,3 +19,18 @@ class Person:
     @classmethod
     def all(cls):
         return cls._all
+    @classmethod
+    def count(cls):
+        return Query.count(cls)
+    @classmethod
+    def find_by_name(cls, name):
+        return Query.find_by_name(cls, name)
+    @classmethod
+    def name_starts_with(cls, letter):
+        return Query.name_starts_with(cls, letter)
+    @classmethod
+    def is_older_than(cls, number):
+        return Query.is_older_than(cls, number)
+    @classmethod
+    def mean_age(cls):
+        return Query.mean_age(cls)
