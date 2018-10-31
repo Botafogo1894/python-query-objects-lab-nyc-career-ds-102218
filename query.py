@@ -1,2 +1,2 @@
 class Query:
-    pass 
+    pass
